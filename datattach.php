@@ -13,9 +13,17 @@ Version: 0.1
 Author URI: http://www.fishandwhistle.net/
 */
 
+/*
+ * Add the plot.ly JS library
+ * 
+ */
 function datattach_enqueue_scripts() {
     wp_enqueue_script( 'plot.ly', plugins_url( 'plotly-latest.min.js', __FILE__ ) , false );
 }
 
 add_action( 'wp_enqueue_scripts', 'datattach_enqueue_scripts' );
 
+function datattach_textdata_shortcode( $atts, $content = null ) {
+	return '<span class="caption">' . $content . '</span>';
+}
+add_shortcode( 'textdata', 'dattach_textdata_shortcode' );

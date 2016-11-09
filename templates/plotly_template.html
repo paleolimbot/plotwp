@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Plotly Tester page</title>
+        <script src="../plotly-latest.min.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Tester! Title!</div>
+        <div id="tester" style="width:90%;height:90%;"></div>
+        
+        <script type="text/javascript">
+            TESTER = document.getElementById('tester');
+            Plotly.plot( TESTER, [{
+            x: [1, 2, 3, 4, 5],
+            y: [1, 2, 4, 8, 16] }], { 
+            margin: { t: 0 } } );
+
+            /* Current Plotly.js version */
+            console.log( Plotly.BUILD );
+        </script>
+    </body>
+</html>
