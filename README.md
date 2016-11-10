@@ -15,7 +15,7 @@ The plot.wp plugin works by taking whatever is between the `[plotly]` and `[/plo
 [plotly]
 {
   "data": [{
-    "x": [1, 2, 3, 4, 5],
+    "x": [1, 2, 3, 4],
     "y": [27, 28, 29, 50],
     "mode": "lines+markers",
     "type": "scatter"

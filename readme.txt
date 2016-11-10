@@ -7,7 +7,7 @@ Stable tag: 0.1
 License: GPLv2 or later
 Donate link: http://apps.fishandwhistle.net/donate
 
-Add JSON-based plots to posts and pages using the [plotly](https://plot.ly/javascript/) API
+Add JSON-based plots to posts and pages using the plotly.js API
 
 == Description ==
 
@@ -23,11 +23,11 @@ Upload the Plot.wp plugin to your blog, Activate it, then use the `[plotly]...[/
 
 Plots are added using the `[plotly]...[/plotly]` shortcode. In between the shortcode must be a valid JSON object that will be passed to `Plotly.plot('myDiv', ...)`.
 
-```
+<code>
 [plotly]
 {
   "data": [{
-    "x": [1, 2, 3, 4, 5],
+    "x": [1, 2, 3, 4],
     "y": [27, 28, 29, 50],
     "mode": "lines+markers",
     "type": "scatter"
@@ -39,7 +39,7 @@ Plots are added using the `[plotly]...[/plotly]` shortcode. In between the short
   }
 }
 [/plotly]
-```
+</code>
 
 For more information about the [plotly](http://plot.ly).js API, see the [online documentation](https://plot.ly/javascript/).
 
@@ -50,5 +50,13 @@ For more information about the [plotly](http://plot.ly).js API, see the [online 
 == Changelog ==
 
 = 0.1 =
+
 *Release Date - 10 November 2016*
-* First release
+
+* First release of the Plot.wp plugin.
+
+== Upgrade Notice ==
+
+= 0.1 =
+
+First release of the Plot.wp plugin.
