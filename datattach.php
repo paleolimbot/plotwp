@@ -14,7 +14,7 @@ Author URI: http://www.fishandwhistle.net/
 */
 
 /*
- * Add the plot.ly JS library
+ * Add the plot.ly JS library to the header
  * 
  */
 function datattach_enqueue_scripts() {
@@ -23,7 +23,35 @@ function datattach_enqueue_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'datattach_enqueue_scripts' );
 
-function datattach_textdata_shortcode( $atts, $content = null ) {
-	return '<span class="caption">' . $content . '</span>';
+/*
+ * Add the [plotly] shortcode
+ */
+function datattach_plotly_shortcode( $atts, $content = null ) {
+    if(!is_array($atts)) {
+        $atts = array();
+    }
+    if(!array_key_exists('style', $atts)) {
+        $atts['style'] = 'width:100%;height:400px;padding:0px'; 
+    }
+    $divatts = join(' ', array_map(function($key) use ($atts) {
+            return $key.'="'. esc_attr($atts[$key]).'"';
+        }, array_keys($atts)));
+    
+    $plotly_div_id = 'plotly_' . rand(567, 56789);
+    return '<div ' . $divatts . ' id="' . $plotly_div_id . '"></div>
+    <script type="text/javascript">
+        TESTER = document.getElementById("' . $plotly_div_id . '");
+        Plotly.plot( TESTER, ' . $content . ' );
+        /* Current Plotly.js version */
+        console.log( Plotly.BUILD );
+    </script>';
 }
-add_shortcode( 'textdata', 'dattach_textdata_shortcode' );
+add_shortcode( 'plotly', 'datattach_plotly_shortcode' );
+
+function datattach_shortcodes_to_exempt_from_wptexturize( $shortcodes ) {
+    $shortcodes[] = 'plotly';
+    return $shortcodes;
+}
+add_filter( 'no_texturize_shortcodes', 'datattach_shortcodes_to_exempt_from_wptexturize' );
+remove_filter( 'the_content', 'wpautop' );
+add_filter( 'the_content', 'wpautop' , 99);
