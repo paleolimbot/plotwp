@@ -43,6 +43,10 @@ Plots are added using the `[plotly]...[/plotly]` shortcode. In between the short
 
 For more information about the [plotly](http://plot.ly).js API, see the [online documentation](https://plot.ly/javascript/).
 
+== Screenshots ==
+
+1. A plot created with the `[plotly]...[/plotly]` shortcode.
+
 == Changelog ==
 
 = 0.1 =
