@@ -11,7 +11,7 @@ Add JSON-based plots to posts and pages using the plotly.js API
 
 == Description ==
 
-Plot.wp enables the [plotly] shortcode, allowing easy inclusion of JSON-based plots using the [plotly](https://plot.ly/javascript/) API. Just add valid plotly JSON between the `[plotly]` and `[/plotly]` shortcodes, and revel as an interactive plot appears in your post.
+Plot.wp enables the `[plotly]` shortcode, allowing easy inclusion of JSON-based plots using the [plotly](https://plot.ly/javascript/) API. Just add valid plotly JSON between the `[plotly]` and `[/plotly]` shortcodes, and revel as an interactive plot appears in your post.
 
 == Installation ==
 
