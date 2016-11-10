@@ -5,7 +5,7 @@ Add JSON-based plots to posts and pages using the [plotly](https://plot.ly/javas
 
 ## Installation
 
-Install **Plot.wp** from the Wordpress Codex or from the releases page. Unzip the folder into your `plugins` directory and start using the `[plotly]...[/plotly]` shortcode!
+Install **Plot.wp** from the Wordpress.org plugins directory or from the [releases page](https://github.com/paleolimbot/plotwp/releases). Unzip the folder into your `plugins` directory and start using the `[plotly]...[/plotly]` shortcode!
 
 ## The plotly shortcode
 
