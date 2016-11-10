@@ -29,6 +29,8 @@ The plot.wp plugin works by taking whatever is between the `[plotly]` and `[/plo
 [/plotly]
 ```
 
+![screenshot-1.png](screenshot-1.png)
+
 You can also set attributes of the enclosing `div` by passing these to the shortcode in the form `[plotly style="height: 200px"]...[/plotly]`. Default settings are controlled by the `defaultplot.css` stylesheet, although this behaviour may be migrated to a settings page in the future.
 
 ## How to use the plotly.js API
