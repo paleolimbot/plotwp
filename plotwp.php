@@ -17,7 +17,7 @@ Author URI: http://www.fishandwhistle.net/
  * Add the plot.ly JS library and defaultplot.css to the header
  */
 function plotwp_enqueue_scripts() {
-    wp_enqueue_script( 'plot.ly', 'https://cdn.plot.ly/plotly-latest.min.js' , false );
+    wp_enqueue_script( 'plot.ly', plugins_url('plotly-1.19.2.min.js', __FILE__), false );
     wp_enqueue_style('plotwp_default', plugins_url('defaultplot.css', __FILE__), false);
 }
 
