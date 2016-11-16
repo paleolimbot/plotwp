@@ -3,7 +3,7 @@ Contributors: paleolimbot
 Tags: charts, graphs, plot, plots, scientific
 Requires at least: 3.7
 Tested up to: 4.6.1
-Stable tag: 0.1
+Stable tag: v0.4
 License: GPLv2 or later
 Donate link: http://apps.fishandwhistle.net/donate
 
