@@ -49,7 +49,7 @@ For more information about the [plotly](http://plot.ly).js API, see the [online 
 
 == Changelog ==
 
-= 0.1 =
+= 0.4 =
 
 *Release Date - 10 November 2016*
 
@@ -57,6 +57,6 @@ For more information about the [plotly](http://plot.ly).js API, see the [online 
 
 == Upgrade Notice ==
 
-= 0.1 =
+= 0.4 =
 
 First release of the Plot.wp plugin.
