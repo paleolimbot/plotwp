@@ -9,7 +9,7 @@ Plugin Name: Plot.wp
 Plugin URI: http://github.com/paleolimbot/plotwp
 Description: Add JSON-based plots to posts and pages using the <a href="https://plot.ly/javascript/">plotly.js</a> API
 Author: Dewey Dunnington
-Version: 0.1
+Version: 0.4
 Author URI: http://www.fishandwhistle.net/
 */
 
