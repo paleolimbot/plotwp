@@ -2,7 +2,7 @@
 
 /**
  * @package Plotwp
- * @version 0.1
+ * @version 0.4
  */
 /*
 Plugin Name: Plot.wp
